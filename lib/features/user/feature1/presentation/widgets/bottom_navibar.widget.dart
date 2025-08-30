@@ -36,7 +36,6 @@ class BottomNaviBar extends StatelessWidget {
         ),
       ],
     );
-    throw UnimplementedError();
   }
 
 }
