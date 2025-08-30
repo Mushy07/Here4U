@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:here4u/features/user/feature1/presentation/widgets/bottom_navibar.widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,6 +55,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int _selectedIndex = 2;
   int _counter = 0;
 
   void _incrementCounter() {
@@ -116,7 +118,11 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      bottomNavigationBar: BottomNaviBar(
+        currentIndex: _selectedIndex,
+        onTap: _onNavBarTap,
+      ),
     );
   }
 }
