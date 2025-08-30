@@ -58,6 +58,12 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 2;
   int _counter = 0;
 
+  void  _onNavBarTap(int index){
+    setState(() {
+      _selectedIndex = index;
+    });
+    print("Selected index: $index");
+  }
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
