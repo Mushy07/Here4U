@@ -57,7 +57,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 2;
   int _counter = 0;
-  void  _onNavBarTap(int index){
+  git void  _onNavBarTap(int index){
     setState(() {
       _selectedIndex = index;
     });
