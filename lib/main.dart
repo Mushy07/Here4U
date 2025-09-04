@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:here4u/features/user/feature1/presentation/screen/main_page.screen.dart';
-import 'package:here4u/features/user/feature1/presentation/widgets/bottom_navibar.widget.dart';
+import 'package:here4u/features/user/home/presentation/screens/main_page.screen.dart';
+import 'package:here4u/core/widgets/bottom_navibar.widget.dart';
 
-import 'features/user/feature1/presentation/screen/diary_page.screen.dart';
+import 'features/user/diary/presentation/screens/diary_page.screen.dart';
 
 void main() {
   runApp(const MyApp());
