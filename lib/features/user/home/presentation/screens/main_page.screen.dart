@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/constants/theme.dart';
 import '../../../../../core/widgets/button.dart';
 import '../../../../../core/widgets/logo.widget.dart';
-import '../../../../../core/widgets/bottom_navibar.widget.dart';
-import 'main_page.screen.dart';
-
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
 

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:here4u/features/user/diary/presentation/screens/diary_page.screen.dart';
+import 'package:here4u/features/user/home/presentation/screens/user_home.screen.dart';
 
-import '../../features/user/diary/presentation/screens/diary_page.screen.dart';
-import '../../features/user/home/presentation/screens/main_page.screen.dart';
+// import '../../features/user/home/presentation/screens/main_page.screen.dart';
 
 class BottomNaviBar extends StatefulWidget {
   const BottomNaviBar({super.key});
@@ -15,7 +16,8 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
   final List<Widget> _pages = [
     SupportPage(),
     DiaryPage(),
-    MainPage(),
+    // MainPage(),
+    UserHomeScreen(),
     ProfilePage(),
     ForumPage(),
 
@@ -61,6 +63,7 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
 
   }
 }
+
 class SupportPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>

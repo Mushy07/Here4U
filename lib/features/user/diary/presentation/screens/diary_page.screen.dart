@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_calendar_carousel/classes/event.dart';
-import 'package:here4u/core/widgets/bottom_navibar.widget.dart';
 import 'package:intl/intl.dart';
 import '../../../../../core/constants/theme.dart';
 import '../../../../../core/widgets/button.dart';

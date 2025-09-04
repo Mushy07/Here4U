@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/constants/theme.dart';
 import '../../../../../core/widgets/button.dart';
 import '../../../../../core/widgets/logo.widget.dart';
-import '../../../../../core/widgets/bottom_navibar.widget.dart';
 import 'main_page.screen.dart';
 
 class MainSupportPage extends StatefulWidget {
@@ -186,49 +184,4 @@ class _MainSupportPageState extends State<MainSupportPage> {
   }
 }
 
-class OptionCard extends StatelessWidget {
-  final String title;
-  final String subtitle;
 
-  const OptionCard({
-    super.key,
-    required this.title,
-    required this.subtitle,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.black12,
-            blurRadius: 6,
-            offset: Offset(0, 3),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: heading2Style,
-          ),
-          const SizedBox(height: 4),
-          Text(
-            subtitle,
-            style: const TextStyle(
-              fontSize: 14,
-              color: Colors.black87,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
