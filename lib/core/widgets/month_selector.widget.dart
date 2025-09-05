@@ -16,22 +16,25 @@ class MonthSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          DateFormat('MMMM yyyy').format(selectedDate),
-          style: subHeadingStyle,
-        ),
-        IconButton(
-          icon: const Icon(Icons.arrow_left, size: 35),
-          onPressed: onPreviousMonth,
-        ),
-        IconButton(
-          icon: const Icon(Icons.arrow_right, size: 35),
-          onPressed: onNextMonth,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            DateFormat('MMMM yyyy').format(selectedDate),
+            style: subHeadingStyle,
+          ),
+          IconButton(
+            icon: const Icon(Icons.arrow_left, size: 35),
+            onPressed: onPreviousMonth,
+          ),
+          IconButton(
+            icon: const Icon(Icons.arrow_right, size: 35),
+            onPressed: onNextMonth,
+          ),
+        ],
+      ),
     );
   }
 }

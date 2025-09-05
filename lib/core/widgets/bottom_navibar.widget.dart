@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:here4u/features/user/diary/presentation/screens/diary_page.screen.dart';
-import 'package:here4u/features/user/home/presentation/screens/user_home.screen.dart';
+
+import '../../features/user/diary/presentation/screens/user_main_diarypage.screen.dart';
+import '../../features/user/home/presentation/screens/user_main_navipage.screen.dart';
 
 // import '../../features/user/home/presentation/screens/main_page.screen.dart';
 
@@ -15,9 +16,8 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
   int _currentIndex = 2;
   final List<Widget> _pages = [
     SupportPage(),
-    DiaryPage(),
-    // MainPage(),
-    UserHomeScreen(),
+    MoodDiaryPage(),
+    UserMainNaviPage(),
     ProfilePage(),
     ForumPage(),
 
