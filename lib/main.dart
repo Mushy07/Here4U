@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'presentation/community_forum/community_forum.screen.dart';
+import 'presentation/mood_diary/mood_diary.screen.dart';
 
 void main() {
   runApp(const MyApp());
