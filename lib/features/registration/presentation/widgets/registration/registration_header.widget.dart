@@ -3,7 +3,11 @@ import 'package:here4u/core/constants/theme.dart';
 import 'package:here4u/core/widgets/logo.widget.dart';
 
 class RegistrationHeaderWidget extends StatelessWidget {
-  const RegistrationHeaderWidget({super.key});
+  final String title;
+  const RegistrationHeaderWidget({
+    super.key,
+    required this.title,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +30,7 @@ class RegistrationHeaderWidget extends StatelessWidget {
                 decoration: BoxDecoration(color: Colors.white.withOpacity(0.6)),
                 alignment: Alignment.center,
                 child: Text(
-                  'Register',
+                  title,
                   style: subHeadingStyle,
                   // TextStyle(
                   //   fontWeight: FontWeight.w800,
