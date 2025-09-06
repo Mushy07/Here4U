@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:here4u/core/constants/theme.dart';
 import 'package:here4u/core/widgets/button.dart';
 import 'package:here4u/features/registration/presentation/widgets/registration/registration_form_field.widget.dart';
+
+import '../../../../../core/widgets/bottom_navibar.widget.dart';
 
 class RegistrationFormWidget extends StatefulWidget {
   const RegistrationFormWidget({super.key});
@@ -32,14 +35,10 @@ class _RegistrationFormWidgetState extends State<RegistrationFormWidget>
       children: [
         Text(
           'Personal Details',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 22,
-            color: Colors.black,
-          ),
+          style: subHeadingStyle,
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: 20.0),
+        const SizedBox(height: 10.0),
         RegistrationFormFieldWidget(hintText: 'Username'),
         RegistrationFormFieldWidget(hintText: 'Name'),
         RegistrationFormFieldWidget(hintText: 'Age'),
@@ -101,27 +100,35 @@ class _RegistrationFormWidgetState extends State<RegistrationFormWidget>
               ),
             ],
           ),
-          child: Row(
-            children: [
-              Text(
-                'Education/ Institution',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF6A6A6A),
-                  fontSize: 16,
+          child: SizedBox(
+            height:50,
+            child: Row(
+              children: [
+                Text(
+                  'Education/ Institution',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF6A6A6A),
+                    fontSize: 16,
+                  ),
                 ),
-              ),
-              Spacer(),
-              Icon(Icons.arrow_drop_down, color: Color(0xFF6A6A6A)),
-            ],
+                Spacer(),
+                Icon(Icons.arrow_drop_down, color: Color(0xFF6A6A6A)),
+              ],
+            ),
           ),
         ),
-        SizedBox(height: 24),
+        const SizedBox(height: 10.0),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: MyButton(
             label: "Register",
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => BottomNaviBar()),
+              );
+            },
             height: 48,
             gradient: LinearGradient(
               colors: [Color(0xFF107B8A), Color(0xFF7A66EC)],
