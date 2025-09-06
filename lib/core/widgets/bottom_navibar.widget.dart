@@ -17,10 +17,10 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
   int _currentIndex = 2;
   final List<Widget> _pages = [
     SupportPage(),
-    CommunityForumScreen(),
     MoodDiaryPage(),
     UserMainNaviPage(),
     UserProfileScreen(),
+    CommunityForumScreen(),
   ];
 
   @override

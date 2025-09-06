@@ -12,6 +12,24 @@ class MoodDiaryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFD6EEDF),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFFD6EEDF),
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () {
+            Navigator.pop(context); // ✅ goes back to previous page
+          },
+        ),
+        title: const Text(
+          "Mood Insights",
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
