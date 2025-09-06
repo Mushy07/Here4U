@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:here4u/core/widgets/bottom_navibar.widget.dart';
 
 void main() {
   runApp(const MyApp());

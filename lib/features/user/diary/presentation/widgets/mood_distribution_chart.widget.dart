@@ -25,7 +25,7 @@ class MoodDistributionChart extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(
-                    "lib/presentation/mood_diary/images/mood_chart.png",
+                    "assets/images/mood_chart.png",
                     fit: BoxFit.contain,
                   ),
                 ),
