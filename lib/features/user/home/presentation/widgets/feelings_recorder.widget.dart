@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:here4u/features/user/home/presentation/widgets/quick_feelings_option.widget.dart';
 
 import '../../../../../core/constants/theme.dart';
+import '../../../diary/presentation/widgets/slider.widget.dart';
 
 class FeelingsRecorder extends StatelessWidget {
   const FeelingsRecorder({super.key});
@@ -55,6 +56,15 @@ class FeelingsRecorder extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 5),
+        SimpleSlider(
+          min: 0,
+          max: 100,
+          initialValue: 50,
+          divisions: 20,
+          onChanged: (value) {
+            print("Slider adjusted to: $value");
+          },
+        ),
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(

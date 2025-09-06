@@ -6,34 +6,41 @@ class SupportOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.black12,
-            blurRadius: 6,
-            offset: Offset(0, 3),
-          ),
-        ],
-      ),
-      child: const Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    return
+
+      Column(
         children: [
-          TodaysWellnessOptionCardWidget(
-            title: "Talk to Someone 🤝",
-            subtitle:
-            "Connect privately with someone who cares and understands",
+          const SizedBox(height: 20.0),
+          Container(
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black12,
+                blurRadius: 6,
+                offset: Offset(0, 3),
+              ),
+            ],
           ),
-          TodaysWellnessOptionCardWidget(
-            title: "Share with the community 💬",
-            subtitle:
-            "Post your thoughts and get support from others like you",
+          child: const Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TodaysWellnessOptionCardWidget(
+                title: "Talk to Someone 🤝",
+                subtitle:
+                "Connect privately with someone who cares and understands",
+              ),
+              TodaysWellnessOptionCardWidget(
+                title: "Share with the community 💬",
+                subtitle:
+                "Post your thoughts and get support from others like you",
+              ),
+            ],
           ),
+              ),
         ],
-      ),
-    );
+      );
   }
 }
