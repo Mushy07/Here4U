@@ -24,25 +24,35 @@ class CustomCalendarWidget extends StatefulWidget {
 
 class _CustomCalendarWidgetState extends State<CustomCalendarWidget> {
   late DateTime _currentMonth;
+  late DateTime _selectedDate;
+
 
   @override
   void initState() {
     super.initState();
     _currentMonth = widget.currentMonth;
+    _selectedDate = widget.currentDate;
+
   }
 
   void _previousMonth() {
     setState(() {
       _currentMonth = DateTime(_currentMonth.year, _currentMonth.month - 1);
+      _selectedDate = DateTime(_currentMonth.year, _currentMonth.month, 1);
     });
     widget.onMonthChanged(_currentMonth);
+    widget.onDateChanged(_selectedDate);
+
   }
 
   void _nextMonth() {
     setState(() {
       _currentMonth = DateTime(_currentMonth.year, _currentMonth.month + 1);
+      _selectedDate = DateTime(_currentMonth.year, _currentMonth.month, 1);
     });
     widget.onMonthChanged(_currentMonth);
+    widget.onDateChanged(_selectedDate);
+
   }
 
   double getCalendarHeight(DateTime date) {
@@ -69,7 +79,7 @@ class _CustomCalendarWidgetState extends State<CustomCalendarWidget> {
           child: SizedBox(
             height: getCalendarHeight(_currentMonth),
             child: CalendarCarousel<Event>(
-              selectedDateTime: widget.currentDate,
+              selectedDateTime: _selectedDate,
               targetDateTime: _currentMonth,
               dayButtonColor: const Color(0xFFE3F5F5),
               todayButtonColor: const Color(0xFFE3F5F5),

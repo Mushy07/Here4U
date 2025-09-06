@@ -17,18 +17,34 @@ class WellnessOption extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Column(
-        children: [
-              Text(
-                emoji,
-                style: const TextStyle(fontSize: 32),
-              ),
-
-          Text(
-            label,
-            style:  heading2Style,
-          ),
-        ],
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 4),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+          color: Colors.white, // box background
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              emoji,
+              style: const TextStyle(fontSize: 40),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              label,
+              style: heading2Style,
+            ),
+          ],
+        ),
       ),
     );
   }
