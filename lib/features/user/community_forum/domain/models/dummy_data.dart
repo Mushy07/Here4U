@@ -1,4 +1,4 @@
-import '../models/post.model.dart';
+import 'post.model.dart';
 
 final List<Post> dummyPosts = [
   Post(

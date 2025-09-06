@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import '../../../models/post.model.dart';
-import 'widgets/post_details/post_header.widget.dart';
-import 'widgets/post_details/post_tags.widget.dart';
-import 'widgets/post_details/post_description.widget.dart';
-import 'widgets/post_details/post_comments_header.widget.dart';
-import 'widgets/post_details/post_comment_input.widget.dart';
-import 'widgets/post_details/post_comment_item.widget.dart';
+import '../../domain/models/post.model.dart';
+import '../widgets/post_details/post_header.widget.dart';
+import '../widgets/post_details/post_tags.widget.dart';
+import '../widgets/post_details/post_description.widget.dart';
+import '../widgets/post_details/post_comments_header.widget.dart';
+import '../widgets/post_details/post_comment_input.widget.dart';
+import '../widgets/post_details/post_comment_item.widget.dart';
+
 
 class PostDetailsScreen extends StatefulWidget {
   final Post post;

@@ -25,7 +25,7 @@ class PatternRecognitionChart extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(
-                    "lib/presentation/mood_diary/images/pattern_chart.png",
+                    "assets/images/pattern_chart.png",
                     fit: BoxFit.contain,
                   ),
                 ),
