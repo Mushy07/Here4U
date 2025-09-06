@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:here4u/features/user/profile/presentation/screens/user_profile.screen.dart';
 
 import '../../features/user/diary/presentation/screens/user_main_diarypage.screen.dart';
 import '../../features/user/home/presentation/screens/user_main_navipage.screen.dart';
@@ -18,9 +19,8 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
     SupportPage(),
     MoodDiaryPage(),
     UserMainNaviPage(),
-    ProfilePage(),
+    UserProfileScreen(),
     ForumPage(),
-
   ];
 
   @override
@@ -33,7 +33,7 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
         onTap: (index) {
           setState(() {
             _currentIndex = index;
-    });
+          });
         },
         items: const [
           BottomNavigationBarItem(
@@ -59,8 +59,6 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
         ],
       ),
     );
-
-
   }
 }
 
@@ -70,15 +68,8 @@ class SupportPage extends StatelessWidget {
       Scaffold(body: Center(child: Text("Support Page")));
 }
 
-class ProfilePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) =>
-      Scaffold(body: Center(child: Text("Profile Page")));
-}
-
 class ForumPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
       Scaffold(body: Center(child: Text("Forum Page")));
 }
-
