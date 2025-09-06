@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import '../../data/dummy_data.dart';
-import '../../models/post.model.dart';
-import 'widgets/community_forum/post_card.widget.dart';
-import 'widgets/community_forum/share_story_button.widget.dart';
-import 'widgets/community_forum/share_story_dialog.widget.dart';
-import 'widgets/community_forum/community_forum_header.widget.dart';
+import '../../domain/models/dummy_data.dart';
+import '../../domain/models/post.model.dart';
+import '../widgets/community_forum/post_card.widget.dart';
+import '../widgets/community_forum/share_story_button.widget.dart';
+import '../widgets/community_forum/share_story_dialog.widget.dart';
+import '../widgets/community_forum/community_forum_header.widget.dart';
 import 'post_details.screen.dart';
+
 
 class CommunityForumScreen extends StatelessWidget {
   const CommunityForumScreen({super.key});

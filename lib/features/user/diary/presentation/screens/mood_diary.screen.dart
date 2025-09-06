@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'widgets/mood_distribution_chart.widget.dart';
-import 'widgets/pattern_recognition_chart.widget.dart';
-import 'widgets/negative_moods.widget.dart';
-import 'widgets/personal_advice.widget.dart';
-import 'widgets/section_header.widget.dart';
+import '../widgets/mood_distribution_chart.widget.dart';
+import '../widgets/pattern_recognition_chart.widget.dart';
+import '../widgets/negative_moods.widget.dart';
+import '../widgets/personal_advice.widget.dart';
+import '../widgets/section_header.widget.dart';
 
 class MoodDiaryScreen extends StatelessWidget {
   const MoodDiaryScreen({super.key});
