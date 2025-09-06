@@ -9,7 +9,7 @@ class RegistrationFormFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
       decoration: BoxDecoration(
         color: Color(0xFFDDEEE5),
         borderRadius: BorderRadius.circular(16.0),
