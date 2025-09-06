@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/constants/theme.dart';
 import '../../../diary/domain/models/mood_record.model.dart';
+import '../../../diary/presentation/screens/mood_diary.screen.dart';
 
 class MoodRecordsList extends StatelessWidget {
   final List<MoodRecord> moodRecords;
@@ -32,7 +33,13 @@ class MoodRecordsList extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print("Add new mood");
+                    // ✅ Navigate to insights screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MoodDiaryScreen(),
+                      ),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFD9D9D9),
@@ -41,8 +48,10 @@ class MoodRecordsList extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  child:  Text("View Insights",
-                  style: heading4Style),
+                  child: Text(
+                    "View Insights",
+                    style: heading4Style,
+                  ),
                 ),
               ],
             ),
