@@ -1,38 +1,43 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:here4u/core/constants/theme.dart';
+
 class MyButton extends StatelessWidget {
   final String label;
   final Function()? onTap;
   final Color bgColor;
   final Color textColor;
-  final double width;
-  final double height;
-  final double borderRadius;
+  final double? width;
+  final double? height;
+  final double? borderRadius;
+  final Gradient? gradient;
 
   const MyButton({
-    Key? key,
+    super.key,
     required this.label,
     required this.onTap,
     this.bgColor = const Color(0xFFD9D9D9),
     this.textColor = Colors.black,
-    this.width = 40,
-    this.height = 45,
-    this.borderRadius = 20,
-  }) : super(key: key);
+    this.width,
+    this.height,
+    this.borderRadius = 20.0,
+    this.gradient,
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: width,
-        height: height,
+        width: width ?? 40.0,
+        height: height ?? 45.0,
         alignment: Alignment.center,
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(borderRadius),
+          color: gradient == null ? bgColor : null,
+          gradient: gradient,
+          borderRadius: borderRadius != null
+              ? BorderRadius.circular(borderRadius!)
+              : null,
           boxShadow: [
             BoxShadow(
               color: Colors.grey.shade300,
@@ -41,12 +46,8 @@ class MyButton extends StatelessWidget {
             ),
           ],
         ),
-        child: Text(
-          label,
-          style: heading3Style,
-        ),
+        child: Text(label, style: whiteHeading3Style),
       ),
-
     );
   }
 }
