@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:here4u/core/widgets/button.dart';
+import 'package:here4u/features/login/presentation/screens/login.screen.dart';
+import 'package:here4u/features/registration/presentation/screens/registration.screen.dart';
 
 class RegistrationLandingButtonsWidget extends StatelessWidget {
   const RegistrationLandingButtonsWidget({super.key});
@@ -12,7 +14,12 @@ class RegistrationLandingButtonsWidget extends StatelessWidget {
           child: MyButton(
             label: "Register",
             textColor: Color(0xFFFFFFFF),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => RegistrationScreen()),
+              );
+            },
             height: 48,
             borderRadius: 20.0,
             gradient: LinearGradient(
@@ -25,7 +32,12 @@ class RegistrationLandingButtonsWidget extends StatelessWidget {
           child: MyButton(
             label: "Login",
             textColor: Color(0xFFFFFFFF),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+              );
+            },
             height: 48,
             borderRadius: 20.0,
             gradient: LinearGradient(

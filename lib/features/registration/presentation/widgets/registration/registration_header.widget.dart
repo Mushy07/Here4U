@@ -32,11 +32,6 @@ class RegistrationHeaderWidget extends StatelessWidget {
                 child: Text(
                   title,
                   style: subHeadingStyle,
-                  // TextStyle(
-                  //   fontWeight: FontWeight.w800,
-                  //   fontSize: 28,
-                  //   color: Colors.black,
-                  // ),
                 ),
               ),
             ),

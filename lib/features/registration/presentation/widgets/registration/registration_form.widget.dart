@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:here4u/core/constants/theme.dart';
 import 'package:here4u/core/widgets/button.dart';
+import 'package:here4u/features/registration/presentation/screens/register_pet_selection.screen.dart';
 import 'package:here4u/features/registration/presentation/widgets/registration/registration_form_field.widget.dart';
 
 import '../../../../../core/widgets/bottom_navibar.widget.dart';
@@ -126,7 +127,9 @@ class _RegistrationFormWidgetState extends State<RegistrationFormWidget>
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => BottomNaviBar()),
+                MaterialPageRoute(
+                  builder: (context) => RegisterPetSelectionScreen(),
+                ),
               );
             },
             height: 48,

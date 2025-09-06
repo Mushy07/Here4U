@@ -10,6 +10,7 @@ class MyButton extends StatelessWidget {
   final double? height;
   final double? borderRadius;
   final Gradient? gradient;
+  final Widget? child;
 
   const MyButton({
     super.key,
@@ -21,6 +22,7 @@ class MyButton extends StatelessWidget {
     this.height,
     this.borderRadius = 20.0,
     this.gradient,
+    this.child,
   });
 
   @override
@@ -46,7 +48,7 @@ class MyButton extends StatelessWidget {
             ),
           ],
         ),
-        child: Text(label, style: whiteHeading3Style),
+        child: child ?? Text(label, style: whiteHeading3Style),
       ),
     );
   }
