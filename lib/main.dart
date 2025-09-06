@@ -5,7 +5,6 @@ import 'package:here4u/features/registration/presentation/screens/registration.s
 import 'package:here4u/features/registration/presentation/screens/registration_landing.screen.dart';
 
 import 'features/registration/presentation/screens/login.screen.dart';
-import 'features/registration/presentation/screens/registration_avatar.screen.dart';
 import 'features/registration/presentation/widgets/registration/registration_form.widget.dart';
 
 void main() {
@@ -19,9 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RegistrationAvatar(),
-      // RegistrationLandingScreen(),
-      // BottomNaviBar(),
+      home:BottomNaviBar(),
       theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
     );
   }
