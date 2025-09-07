@@ -1,6 +1,6 @@
 # Software Track
 # Track 1: Mental Health Support for Students
-# Problem Statement: University students face increasing mental health challenges, yet many avoid seeking help due to stigma or limited counseling resources, leaving them without accessible, proactive tools for self-care and stress management.
+# Problem Statement: University students often feel overwhelmed by academic and personal pressures yet lack a safe space to express their struggles. Fear of judgment, broken trust, and dismissive responses from peers discourage them from sharing openly, leaving them isolated and unsupported. At the same time, many struggle to track and understand their own emotions, making it difficult to identify patterns, triggers, and effective coping strategies.
 
 #Here4U
 Here4U is a mental health support application designed specifically for university students. Many students face stress, anxiety, and emotional challenges but often feel uncertain about seeking professional help. Here4U bridges the gap between doing nothing and seeing a professional by providing a safe, anonymous, and supportive space.
