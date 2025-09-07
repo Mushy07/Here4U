@@ -14,10 +14,11 @@ class CommunityForumHeader extends StatelessWidget {
           centerTitle: true,
           title: const Text(
             'Community Forum',
+            overflow: TextOverflow.clip,
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
-              fontSize: 36,
+              fontSize: 26,
             ),
           ),
         ),

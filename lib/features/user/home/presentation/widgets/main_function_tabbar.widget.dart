@@ -19,6 +19,7 @@ class MainFunctionButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             child: TabBar(
+              dividerHeight: 0.0,
               labelColor: Colors.black,
               unselectedLabelColor: Colors.black,
               indicator: BoxDecoration(

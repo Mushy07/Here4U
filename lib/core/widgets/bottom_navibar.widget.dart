@@ -62,14 +62,3 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
   }
 }
 
-class SupportPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) =>
-      Scaffold(body: Center(child: Text("Support Page")));
-}
-
-class ForumPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) =>
-      Scaffold(body: Center(child: Text("Forum Page")));
-}

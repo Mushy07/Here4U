@@ -10,7 +10,6 @@ class FeelingsRecorder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
@@ -19,10 +18,7 @@ class FeelingsRecorder extends StatelessWidget {
             const SizedBox(width: 6),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                "Today Wellness",
-                style: subHeadingStyle,
-              ),
+              child: Text("Today Wellness", style: subHeadingStyle),
             ),
           ],
         ),
@@ -81,6 +77,23 @@ class FeelingsRecorder extends StatelessWidget {
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide.none,
+              ),
+              suffixIcon: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.mic, color: Colors.black54),
+                    onPressed: () {
+                      // Handle voice input
+                    },
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.send, color: Colors.black54),
+                    onPressed: () {
+                      // Handle send action
+                    },
+                  ),
+                ],
               ),
             ),
             style: const TextStyle(color: Colors.black87),
