@@ -3,8 +3,8 @@ import 'package:here4u/features/user/profile/presentation/screens/user_profile.s
 
 import '../../features/user/diary/presentation/screens/user_main_diarypage.screen.dart';
 import '../../features/user/home/presentation/screens/user_main_navipage.screen.dart';
+import '../../features/user/pair_matching/presentation/screen/matching_listener.screen.dart';
 
-// import '../../features/user/home/presentation/screens/main_page.screen.dart';
 
 class BottomNaviBar extends StatefulWidget {
   const BottomNaviBar({super.key});
@@ -16,7 +16,7 @@ class BottomNaviBar extends StatefulWidget {
 class _BottomNaviBarState extends State<BottomNaviBar> {
   int _currentIndex = 2;
   final List<Widget> _pages = [
-    SupportPage(),
+    PairMatchingMainPage(),
     MoodDiaryPage(),
     UserMainNaviPage(),
     UserProfileScreen(),

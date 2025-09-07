@@ -14,6 +14,12 @@ TextStyle get subHeadingStyle {
   );
 }
 
+TextStyle get heading1Style {
+  return GoogleFonts.poppins(
+    textStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+  );
+}
+
 TextStyle get heading2Style {
   return GoogleFonts.poppins(
     textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -53,3 +59,11 @@ TextStyle get diaryEmotionStyle {
     ),
   );
 }
+
+TextStyle get chatroomDesc {
+  return GoogleFonts.poppins(
+    textStyle: const TextStyle(color: Colors.grey,fontSize: 12, fontWeight: FontWeight.bold),
+  );
+}
+
+
